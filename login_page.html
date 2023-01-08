@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="./assets/jquery/jquery-3.6.0.min.js" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href=".assets/fonts/css2.css" rel="stylesheet">
+    <link href=".assets/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="login_bay">
+    <h2>You tell, I do</h2>
+  </div>
+<div class="container" id="login-container">
+  <div class="form-container sign-up-container">
+    <form action="#">
+      <h1>Create Account</h1>
+      <input type="text" placeholder="Name" />
+      <input type="email" placeholder="Email" />
+      <input type="password" id="password" placeholder="Password" required/>
+      <input type="password" id="confirm_password" placeholder="confirm password" required onkeyup="validate_password()"/>
+      <span id="wrong_pass_alert"></span>
+      <button id="sign_up_btn" onclick="wrong_pass_alert()">Sign Up</button>
+    </form>
+  </div>
+  <div class="form-container sign-in-container">
+    <form action="#">
+      <h1>Sign in</h1>
+      <input type="email" placeholder="Email" required id="signin-mail">
+      <input type="password" id="login-password" placeholder="Password" required>
+      <span id="confirm_password_msg"></span>
+      <a href="#">Forgot your password?</a>
+      <div class="button-wrapping">
+        <button id="master_btn" onclick="wrong_data_alert()"> <a href="C:\Users\suripraba\Desktop\task_appplication\master_page.html"> Master Login</a></button>
+        <button id="student_btn" onclick="wrong_data_alert()">  <a href="C:\Users\suripraba\Desktop\task_appplication\student_page.html"> Student Login</a></button>
+    </div>
+    </form>
+  </div>
+  <div class="overlay-container">
+    <div class="overlay">
+      <div class="overlay-panel overlay-left">
+        <h1>Welcome Back!</h1>
+        <p>To keep connected with us please login with your personal info</p>
+        <button class="ghost" id="signIn">Sign In</button>
+      </div>
+      <div class="overlay-panel overlay-right">
+        <h1>Hello, Friend!</h1>
+        <p>Enter your personal details and start journey with us</p>
+        <button class="ghost" id="signUp" >Sign Up</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
+<script src="jsforum.js">
+    
+</script>
